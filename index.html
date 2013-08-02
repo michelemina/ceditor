@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script type="text/javascript">
+    
+    </script>
+    <title>Canvas Paint - Example 7</title>
+    <style type="text/css"><!--
+      
+      canvas { background: url('bg.png');}
+      canvas:hover,canvas:active {cursor:pointer;}
+      .color-picker-cell{width:15px;height:15px;}
+      .container {
+        width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+        zoom: 1;
+      }
+      
+      /*#imageTemp { margin-left: -405px;margin-top: -10px; }*/
+    --></style>
+    <script type="text/javascript" src="ceditor.js"></script>
+    
+  </head>
+  <body>
+    <p>
+      <label>Drawing tool: <select id="dtool">          
+          <option value="circle">Circle</option>
+          <option value="curve">Curve</option>
+          <option value="parable">Parable</option>
+          <option value="semicircle">Semicircle</option>
+          <option value="arc">Arc</option>
+          <option value="segment">Segmento</option>
+          <option value="arrow">Arrow</option>
+          <option value="rectangle">Rectangle</option>
+          <option value="pencil">Pencil</option>
+          <option value="mover">Mover</option>
+          <option value="deleter">Deleter</option>
+          <option value="duplicator">Duplicator</option>
+          <option value="bucket">Bucket</option>
+      </select></label>
+      <label>Stroke: <select id="dstroke">
+          <option value="#000">Black</option>
+          <option value="#CC0000">Red</option>
+          <option value="#009933">Green</option>
+      </select></label>
+      <label>Fill: <select id="dfill">
+          <option value="#FFF">White</option>
+          <option value="#000">Black</option>
+          <option value="#CC0000">Red</option>
+          <option value="#009933">Green</option>
+      </select></label>
+      <button id="reset">Reset</button>
+      <button id="back">Back</button>
+    </p>
+    <div id="container" class="container">
+      <canvas id="imageView" width="400" height="300">
+        <p>Unfortunately, your browser is currently unsupported by our web 
+        application.  We are sorry for the inconvenience. Please use one of the 
+        supported browsers listed below, or draw the image you want using an 
+        offline tool.</p>
+        <p>Supported browsers: <a href="http://www.opera.com">Opera</a>, <a 
+          href="http://www.mozilla.com">Firefox</a>, <a 
+          href="http://www.apple.com/safari">Safari</a>, and <a 
+          href="http://www.konqueror.org">Konqueror</a>.</p>
+      </canvas>
+    </div>
+    <div id="demo"></div>
+  </body>
+</html>
+
