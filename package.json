@@ -1,0 +1,16 @@
+{
+  "name": "ceditor",
+  "version": "1.0.0",
+  "description": "Basic Canvas Editor ==============",
+  "main": "ceditor.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

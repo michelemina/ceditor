@@ -619,6 +619,9 @@ var Sketch = (function(){
   }
 
   function img_update () {
+    if (!context) {
+      return;
+    }
     clearImage();
     for(var i=0; i<polygons.length;i++){
       var polygon = polygons[i];
@@ -949,8 +952,12 @@ var Sketch = (function(){
   return API;
 })();
 
-if(window.addEventListener) {
+if (typeof window !== 'undefined' && window.addEventListener) {
   window.onload = function() {
     Sketch.initialize();
   };
+}
+
+if (typeof module !== 'undefined') {
+  module.exports = Sketch;
 }
